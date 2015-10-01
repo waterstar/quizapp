@@ -1,1 +1,7 @@
-<h1> quizes app -- quize 1 </h1>
+<div class="col-xs-10 col-xs-offset-1">
+<h1> Did you know : </h1>
+<h2><%= @known.fact %></h2>
+<br />
+<br />
+<%=link_to 'Contribute Known Fact', new_quize_path, :class => 'btn btn-default' %>
+</div>

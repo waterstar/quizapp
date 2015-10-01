@@ -1,0 +1,8 @@
+<div class="col-xs-10 col-xs-offset-1">
+<h1>Enter a known fact : </h1>
+<%= simple_form_for Knownfact.new, url: new_quize_path do |f| %>
+<%= f.input :fact, label:false %>
+<br />
+<%= f.submit 'Add', :class => 'btn pull-right' %>
+<% end %>
+</div>

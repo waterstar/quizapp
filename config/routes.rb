@@ -55,5 +55,6 @@ Quizapp::Application.routes.draw do
   #   end
 
   root 'quizes#index'
-
+  resources :quizes
+  post 'quizes/new', :to => 'quizes#create'
 end
